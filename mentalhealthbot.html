@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="mentalhealthstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div data-aos="fade-down">
+         <h1 class="h1 text-center sticky-top" id="titlesize">
+             mental health bot at your service!
+         </h1>
+        </div>
+        <br>
+        <script>
+            alert("I am Lily! Here to check your mental health :)");
+            var feeling = prompt("Are you happy,sad,demotivated or anxious? Share with Lily<3");
+            var ImageAdvice= new Array('happy.jfif','sad.jfif','demotivated.jfif','anxious.jfif');
+            var AnxiousAdvice=["Don't be anxious. Life is complicated only in human mind","Why worry about future when it doesn't exist","Why hurry when life is eternal"];
+            var SadAdvice=["Meek is not weak","There is no sunshine without rain!","Saddness makes you face your own vulnerability"];
+            var DemotivatedAdvice=["Change your plan not your goal","Slow progress is still progress","Run your life on habits not motivation"];
+            var HappyAdvice=["Life is a celebration, not a maths problem!","If you're not a poet,your life can be a poem.","Smile,it is free ;)"];
+            var randomnumber=Math.floor(Math.random()*AnxiousAdvice.length);
+            if(feeling==="anxious")
+            {document.write("<div data-aos=\"fade-center\" >"+"  <div class=\"container\">"+
+"<div class=\"card\">"+"<div class=\"content\">"+"<h2>Random Tip</h2>"+
+"<h4>"+AnxiousAdvice[randomnumber]+"</h4></div>"+ "</div>"+"</div>"+"</div>"+"<script type=\"text/javascript\" src=\"vanilla-tilt.js\">"+"<"+"/script>"+
+        "<script>"+
+           "VanillaTilt.init(document.querySelector(\".card\"),"+"{"+
+            "max: 25,"+
+            "speed: 400,"+
+          "glare: true,"+
+          "\"max-glare\":1,"+
+            "});VanillaTilt.init(document.querySelectorAll(\".card\"));"+"<"+"/script>"    );
+                document.write("<img src= \"anxious.jfif\""+'class=\" img-fluid rounded mx-auto d-block\"'+"style=height:auto"+">");    
+            }
+            else if(feeling==="sad")
+            {
+              document.write("<div data-aos=\"fade-center\" >"+"  <div class=\"container\">"+
+"<div class=\"card\">"+"<div class=\"content\">"+"<h2>Random Tip</h2>"+
+"<h4>"+SadAdvice[randomnumber]+"</h4></div>"+ "</div>"+"</div>"+"</div>"+"<script type=\"text/javascript\" src=\"vanilla-tilt.js\">"+"<"+"/script>"+
+        "<script>"+
+           "VanillaTilt.init(document.querySelector(\".card\"),"+"{"+
+            "max: 25,"+
+            "speed: 400,"+
+          "glare: true,"+
+          "\"max-glare\":1,"+
+            "});VanillaTilt.init(document.querySelectorAll(\".card\"));"+"<"+"/script>"    );
+                document.write("<img src= \"sad.jfif\""+'class=\" img-fluid rounded mx-auto d-block\"'+"style=height:auto"+">");
+            }
+            else if(feeling==="demotivated")
+            {
+              document.write("<div data-aos=\"fade-center\" >"+"  <div class=\"container\">"+
+"<div class=\"card\">"+"<div class=\"content\">"+"<h2>Random Tip</h2>"+
+"<h4>"+DemotivatedAdvice[randomnumber]+"</h4></div>"+ "</div>"+"</div>"+"</div>"+"<script type=\"text/javascript\" src=\"vanilla-tilt.js\">"+"<"+"/script>"+
+        "<script>"+
+           "VanillaTilt.init(document.querySelector(\".card\"),"+"{"+
+            "max: 25,"+
+            "speed: 400,"+
+          "glare: true,"+
+          "\"max-glare\":1,"+
+            "});VanillaTilt.init(document.querySelectorAll(\".card\"));"+"<"+"/script>"    );
+                document.write("<img src= \"demotivated.jfif\""+'class=\" img-fluid rounded mx-auto d-block\"'+"style=height:auto"+">");
+            }
+            else if(feeling==="happy")
+            {
+              document.write("<div data-aos=\"fade-center\" >"+"  <div class=\"container\">"+
+"<div class=\"card\">"+"<div class=\"content\">"+"<h2>Random Tip</h2>"+
+"<h4>"+HappyAdvice[randomnumber]+"</h4></div>"+ "</div>"+"</div>"+"</div>"+"<script type=\"text/javascript\" src=\"vanilla-tilt.js\">"+"<"+"/script>"+
+        "<script>"+
+           "VanillaTilt.init(document.querySelector(\".card\"),"+"{"+
+            "max: 25,"+
+            "speed: 400,"+
+          "glare: true,"+
+          "\"max-glare\":1,"+
+            "});VanillaTilt.init(document.querySelectorAll(\".card\"));"+"<"+"/script>"    );
+                document.write("<img src= \"happy.jfif\""+'class=\" img-fluid rounded mx-auto d-block\"'+"style=height:auto"+">");
+            }
+          
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 150, // offset (in px) from the original trigger point
+             delay: 150, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+          });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script>
+               VanillaTilt.init(document.querySelector(".card"),{
+                max: 25,
+                speed: 400,
+              glare: true,
+              "max-glare":1,
+                });
+                VanillaTilt.init(document.querySelectorAll(".card") ); 
+            </script>
+    </body>
+</html>

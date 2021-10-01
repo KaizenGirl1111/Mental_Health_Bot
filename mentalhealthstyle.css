@@ -1,0 +1,79 @@
+body{
+    font-family: "Sofia", sans-serif;
+    background-image:url('lily_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+h1{
+    color:rgba(255,0,0,0.7);
+    font-family: "Sofia", sans-serif;
+}
+#titlesize{
+    font-size: 10vh;
+}
+img{
+ height:30vh;
+ width:30vw;
+}
+p{
+    font-family: "Sofia", sans-serif;
+    float:left;
+}
+.mascotimg{
+    background-image:url('dialogue\ box.png');
+    background-size:cover;
+    float:right;
+
+}
+.container{
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    max-width:75rem;
+    flex-wrap:wrap;
+    z-index:1;
+    }
+    .container .card{
+    position:relative;
+    width:25.5em;
+    height:15em;
+    margin:2em;
+    box-shadow:1em 1em 3em rgba(0,0,0,0.5);
+    border-radius:1em;
+    background:rgba(255,255,255,0.1);
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter:blur(0.25rem);
+    }
+    .container .card .content
+    {
+    padding:1.25rem;
+    text-align:center;
+    opacity:1;
+    font-family: "Sofia", sans-serif;
+    }
+
+    .container .card .content h2
+    {
+    position:absolute;
+    text-align:center;
+    top:-0.2em;
+    right:1em;
+    left:1em;
+    font-size:2em;
+    color:rgba(255,0,0,0.7);
+    pointer-events:none;
+    font-family: "Sofia", sans-serif;
+    }
+    .container .card .content h4
+    {
+      font-size:1.8em;
+      color:rgba(255,255,255,0.5);
+      font-family: "Sofia", sans-serif;
+    }
